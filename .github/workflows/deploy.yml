@@ -12,10 +12,6 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [15.x]
-
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
@@ -38,7 +34,7 @@ jobs:
         ref: gh-pages
 
     - name: Build
-      run: npm run build
+      run: npm run build && ls -a build
 
     - name: Deploy
       run: |
