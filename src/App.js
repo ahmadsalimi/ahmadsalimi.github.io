@@ -19,9 +19,8 @@ class App extends Component {
       resumeData: {}
     };
 
-    ReactGA.initialize('UA-110570651-1');
+    ReactGA.initialize('UA-110570651-1', { testMode: process.env.NODE_ENV === 'test' });
     ReactGA.pageview(window.location.pathname);
-
   }
 
   getResumeData(){
