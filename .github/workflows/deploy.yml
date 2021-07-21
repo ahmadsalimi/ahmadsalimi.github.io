@@ -27,23 +27,25 @@ jobs:
     - name: Run the tests
       run: npm run test
 
-    - name: Checkout in build directory
+    - name: Build
+      run: npm run build
+
+      - name: Checkout in build directory
       uses: actions/checkout@v2
       with:
-        path: build
+        path: ../deploy
         ref: gh-pages
-
-    - name: Build
-      run: ls -a build; npm run build; ls -a build
 
     - name: Deploy
       run: |
+        rm -rf ../deploy/gh-pages
+        mv build ../deploy/gh-pages
+        cd ../deploy
         git config user.name $user_name
         git config user.email $user_email
         git add -A
         git commit -m "Deploy to GitHub Pages"
         git push origin gh-pages
-      working-directory: build
       env:
         user_name: 'github-actions[bot]'
         user_email: 'github-actions[bot]@users.noreply.github.com'
