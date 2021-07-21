@@ -40,6 +40,7 @@ jobs:
       run: |
         rm -rf deploy/docs
         mv build deploy/docs
+        cp CMAP deploy/docs/
         cd deploy
         git config user.name $user_name
         git config user.email $user_email
