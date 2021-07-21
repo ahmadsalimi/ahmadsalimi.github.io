@@ -31,14 +31,14 @@ jobs:
     - name: Run the tests
       run: npm run test
 
-    - name: Build
-      run: npm run build
-
     - name: Checkout in build directory
       uses: actions/checkout@v2
       with:
         path: build
         ref: gh-pages
+
+    - name: Build
+      run: npm run build
 
     - name: Deploy
       run: |
