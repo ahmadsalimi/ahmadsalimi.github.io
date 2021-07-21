@@ -45,7 +45,7 @@ jobs:
         git config user.name $user_name
         git config user.email $user_email
         git add -A
-        git commit -m "Deploy to GitHub Pages"
+        git commit -m "Deploy to GitHub Pages" --allow-empty
         git push origin gh-pages
       env:
         user_name: 'github-actions[bot]'
