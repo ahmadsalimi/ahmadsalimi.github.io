@@ -31,14 +31,23 @@ jobs:
     - name: Run the tests
       run: npm run test
 
+    - name: Build
+      run: npm run build
+
+    - name: Checkout in build directory
+      uses: actions/checkout@v2
+      with:
+        path: build
+        ref: gh-pages
+
     - name: Deploy
       run: |
-        git config --global user.name $user_name
-        git config --global user.email $user_email
-        git remote set-url origin https://${github_token}@github.com/ahmadsalimi/salimiahmad.ir
-        npm run deploy
+        git config user.name $user_name
+        git config user.email $user_email
+        git add -A
+        git commit -m "Deploy to GitHub Pages"
+        git push origin gh-pages
+      working-directory: build
       env:
         user_name: 'github-actions[bot]'
         user_email: 'github-actions[bot]@users.noreply.github.com'
-        github_token: ${{ secrets.ACCESS_TOKEN }}
-        repository: ${{ github.actor }}/${{ github.event.repository.name }}
