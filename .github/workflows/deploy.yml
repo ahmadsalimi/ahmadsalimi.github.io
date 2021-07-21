@@ -34,7 +34,7 @@ jobs:
         ref: gh-pages
 
     - name: Build
-      run: npm run build && ls -a build
+      run: ls -a build; npm run build; ls -a build
 
     - name: Deploy
       run: |
