@@ -30,7 +30,7 @@ jobs:
     - name: Build
       run: npm run build
 
-      - name: Checkout in build directory
+    - name: Checkout in build directory
       uses: actions/checkout@v2
       with:
         path: ../deploy
