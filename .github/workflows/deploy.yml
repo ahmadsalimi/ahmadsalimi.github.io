@@ -1,16 +1,14 @@
-name: CI/CD
+name: Deploy github pages
 
 on:
   push:
-    branches: [ master ]
-  pull_request:
     branches: [ master ]
 
 env:
   NODE_VERSION: 16.4.1
 
 jobs:
-  build:
+  deploy:
 
     runs-on: ubuntu-latest
 
@@ -33,9 +31,6 @@ jobs:
     - name: Run the tests
       run: npm run test
 
-    - name: Build
-      run: npm run build
-
     - name: Deploy
       run: |
         git config --global user.name $user_name
@@ -45,5 +40,5 @@ jobs:
       env:
         user_name: 'github-actions[bot]'
         user_email: 'github-actions[bot]@users.noreply.github.com'
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.ACCESS_TOKEN }}
         repository: ${{ github.actor }}/${{ github.event.repository.name }}
