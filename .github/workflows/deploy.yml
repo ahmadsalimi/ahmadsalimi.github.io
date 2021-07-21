@@ -30,14 +30,14 @@ jobs:
     - name: Install dependencies
       run: npm install
 
+    - name: Run the tests
+      run: npm run test
+
     - name: Build
       run: npm run build
 
     - name: Deploy
       run: |
-        git config --global user.name $user_name
-        git config --global user.email $user_email
-        git remote set-url origin https://${github_token}@github.com/${repository}
         npm run deploy
       env:
         user_name: 'github-actions[bot]'
