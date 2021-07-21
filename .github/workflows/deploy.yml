@@ -33,14 +33,14 @@ jobs:
     - name: Checkout in build directory
       uses: actions/checkout@v2
       with:
-        path: ../deploy
+        path: deploy
         ref: gh-pages
 
     - name: Deploy
       run: |
-        rm -rf ../deploy/gh-pages
-        mv build ../deploy/gh-pages
-        cd ../deploy
+        rm -rf deploy/gh-pages
+        mv build deploy/gh-pages
+        cd deploy
         git config user.name $user_name
         git config user.email $user_email
         git add -A
