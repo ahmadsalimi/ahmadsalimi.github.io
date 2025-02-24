@@ -1,33 +1,9 @@
 import React, { Component } from 'react';
 
-class JobDescription extends Component {
-  render() {
-    if (this.props.data) {
-      var description = this.props.data;
-    }
-    if (typeof description === 'object' && description.type === 'list') {
-      return (
-        <div>
-          <p dangerouslySetInnerHTML={{ __html: description.heading }}></p>
-          <ul>
-            {description.items.map((item, index) => (
-              <li key={index}>
-                <JobDescription data={item} />
-              </li>
-            ))}
-          </ul>
-        </div>
-      )
-    }
-    return <p dangerouslySetInnerHTML={{ __html: description }}></p>
-  }
-}
-
 class News extends Component {
   render() {
     if (this.props.data) {
       var news = this.props.data.news;
-      var experience = this.props.data.experience;
     }
 
     return (

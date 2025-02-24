@@ -13,7 +13,7 @@ class SearchResults extends Component {
                         <h1>Search</h1>
                      </div>
                      <div className="col-6 col-search-close">
-                        <a className="js-search" href="#"><i className="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+                        <a className="js-search" href="#home"><i className="fas fa-times-circle text-muted" aria-hidden="true"></i> </a>
                      </div>
                   </div>
                   <div id="search-box">

@@ -17,10 +17,10 @@ class Modal extends Component {
               <pre><code className="tex hljs"></code></pre>
             </div>
             <div className="modal-footer">
-              <a className="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+              <a className="btn btn-outline-primary my-1 js-copy-cite" href="#copy" target="_blank">
                 <i className="fas fa-copy"></i> Copy
               </a>
-              <a className="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+              <a className="btn btn-outline-primary my-1 js-download-cite" href="#download" target="_blank">
                 <i className="fas fa-download"></i> Download
               </a>
               <div id="modal-error"></div>
