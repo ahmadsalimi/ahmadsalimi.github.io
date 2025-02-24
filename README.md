@@ -1,5 +1,5 @@
 # Ahmad Salimi personal website
 
-[salimiahmad.ir](https://salimiahmad.ir)
+[ahmadsalimi.github.io](https://ahmadsalimi.github.io)
 
 Created by ReactJS

@@ -15,7 +15,10 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "buildIndex": "node src/buildIndex.js",
+    "prestart": "npm run buildIndex",
+    "prebuild": "npm run buildIndex"
   },
   "homepage": "https://salimiahmad.ir/"
 }
