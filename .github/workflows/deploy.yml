@@ -40,7 +40,7 @@ jobs:
       run: |
         rm -rf deploy/*
         mv build/* deploy/
-        cp CNAME deploy/
+        test -f CNAME && cp CNAME deploy/
         cd deploy
         git config user.name $user_name
         git config user.email $user_email
