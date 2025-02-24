@@ -24,7 +24,7 @@ class News extends Component {
                     <div className="m-2">
                       <span className="badge badge-pill border ">&nbsp;</span>
                     </div>
-                    <div className="row h-50" >
+                    <div className="row h-50" style={{fontSize: '0.5rem'}}>
                       <div className={"col" + (index < news.length - 1 ? " border-right" : "")}>&nbsp;</div>
                       <div className="col">&nbsp;</div>
                     </div>
