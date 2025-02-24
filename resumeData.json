@@ -1,132 +1,223 @@
 {
   "main": {
     "name": "Ahmad Salimi",
+    "title": "Graduate Researcher",
+    "affiliation": "York University",
+    "location": "Toronto, Canada",
     "description": "Undergraduate Research Assistant at EPFL",
-    "image": "ahmad.jpg",
-    "bio": "Experienced in Python, C#, Java, C, Javascript, and R programming. Skilled in Machine Learning algorithms, Deep Learning, Computer Vision, and Software Engineering. Bachelor of Science student in Computer Engineering at Sharif University of Technology.",
-    "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
-    "email": "ahsalimi@ce.sharif.edu",
+    "image_url": "https://github.com/ahmadsalimi.png",
+    "about": "Hi there! I'm Ahmad, an M.Sc. student in Computer Science at York University, working under the supervision of <a href=\"https://csprofkgd.github.io/\" target=\"_blank\" rel=\"noopener\">Kosta Derpanis</a> as a member of the <a href=\"https://yorkucvil.github.io/\" target=\"_blank\" rel=\"noopener\">CVIL Lab</a>. My research focuses on artificial intelligence, particularly computer vision. I'm especially interested in generative modeling, with a focus on Diffusion Models and their controllability in 3D Vision.",
+    "interests": [
+      "Computer Vision",
+      "Generative Modeling",
+      "3D Vision",
+      "Diffusion Models",
+      "Controllable Generation"
+    ],
+    "education": [
+      {
+        "id": "yorku-msc",
+        "school": "York University",
+        "degree": "M.Sc., Computer Science",
+        "years": "2023 - 2025",
+        "description": "Toronto, Canada"
+      },
+      {
+        "id": "sharif-bsc",
+        "school": "Sharif University of Technology",
+        "degree": "B.Sc., Computer Engineering",
+        "years": "2018 - 2023",
+        "description": "Tehran, Iran"
+      }
+    ],
+    "publications": [
+      {
+        "title": "Geometry-Aware Diffusion Models for Multiview Scene Inpainting",
+        "authors": [
+          {
+            "name": "Ahmad Salimi",
+            "url": "#"
+          },
+          {
+            "name": "Tristan Aumentado-Armstrong",
+            "url": "https://scholar.google.ca/citations?user=mV9zdJMAAAAJ&hl=en"
+          },
+          {
+            "name": "Marcus A. Brubaker",
+            "url": "https://mbrubake.github.io/"
+          },
+          {
+            "name": "Konstantinos G. Derpanis",
+            "url": "https://csprofkgd.github.io/"
+          }
+        ],
+        "date": "February 2025",
+        "publisher": "arXiv preprint",
+        "image_url": "https://geomvi.github.io/assets/teaser.svg",
+        "abstract": "In this paper, we focus on 3D scene inpainting, where parts of an input image set, captured from different viewpoints, are masked out. The main challenge lies in generating plausible image completions that are geometrically consistent across views. Most recent work addresses this challenge by combining generative models with a 3D radiance field to fuse information across viewpoints. However, a major drawback of these methods is that they often produce blurry images due to the fusion of inconsistent cross-view images. To avoid blurry inpaintings, we eschew the use of an explicit or implicit radiance field altogether and instead fuse cross-view information in a learned space. In particular, we introduce a geometry-aware conditional generative model, capable of inpainting multi-view consistent images based on both geometric and appearance cues from reference images. A key advantage of our approach over existing methods is its unique ability to inpaint masked scenes with a limited number of views (i.e., few-view inpainting), whereas previous methods require relatively large image sets for their 3D model fitting step. Empirically, we evaluate and compare our scene-centric inpainting method on two datasets, SPIn-NeRF and NeRFiller, which contain images captured at narrow and wide baselines, respectively, and achieve state-of-the-art 3D inpainting performance on both. Additionally, we demonstrate the efficacy of our approach in the few-view setting compared to prior methods.",
+        "publication_webpage": "https://geomvi.github.io/",
+        "arxiv_url": "https://arxiv.org/abs/2502.13335",
+        "pdf_url": "https://arxiv.org/pdf/2502.13335.pdf",
+        "bib_file": "citations/salimi2025geometry.bib"
+      }
+    ],
+    "experience": [
+      {
+        "role": "Research and Teaching Assistant",
+        "company": "Lassonde School of Engineering, York University",
+        "from": "September 2023",
+        "location": "Toronto, Canada",
+        "description": {
+          "type": "list",
+          "items": [
+            {
+              "type": "list",
+              "heading": "Research at CVIL Lab - Under the supervision of <a href=\"https://csprofkgd.github.io/\" target=\"_blank\" rel=\"noopener\">Kosta Derpanis</a>: Generative Modeling, especially Diffusion Models and their controllability in the context of 3D Vision",
+              "items": [
+                "Master's thesis title: Geometry-Aware Diffusion Models for Multiview Scene Inpainting (In progress)",
+                "Designed, implemented, and trained a geometry-aware diffusion model to inpaint 3D scenes, by fine-tuning Stable Diffusion for inpainting, achieving state-of-the-art performance compared to previous work. Worked with PyTorch, PyTorch Lightning, Diffusers, PyTorch3D, Kornia, NeRF Studio, Weights & Biases, etc."
+              ]
+            },
+            {
+              "type": "list",
+              "heading": "Teaching Assistantship",
+              "items": [
+                "Computer Vision, Fall 2024: Lab tutorial and grading",
+                "Advanced Object-oriented Programming, Fall 2023, Winter and Fall 2024, Winter 2025: Lab tutorial and grading"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "role": "Data Scientist",
+        "company": "Hasti Innovative Trading",
+        "from": "Oct. 2022",
+        "to": "May. 2023",
+        "location": "Tehran, Iran",
+        "description": {
+          "type": "list",
+          "items": [
+            {
+              "type": "list",
+              "heading": "Fully Automated Pipeline for Training Deep Learning Models",
+              "items": [
+                "Designed a solution to create datasets, train models on GPU, and, deploy results in production using Docker, PyTorch, PyTorch Lightning, and DVC, decreasing development, training, and deployment time by 90%"
+              ]
+            },
+            {
+              "type": "list",
+              "heading": "Train and Deploy Deep Models",
+              "items": [
+                "Designed and implemented a service-oriented multi-modal search engine for a large collection of online marketplaces, compatible with multi-modal documents and queries",
+                "Fine-tuned OpenAI CLIP for domain adaptation with 9 million training samples",
+                "Trained a zero-shot vision-language Transformer-based model to build a session-based recommendation system",
+                "Developed several microservices with the internal and external APIs using gRPC and gRPC gateway in GoLang and Python",
+                "Adopted Milvus for fast vector retrieval",
+                "Deployed the models in Kubernetes, equipped with GPU for inference"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "role": "Undergraduate Research Assistant",
+        "company": "EPFL",
+        "from": "Jun. 2021",
+        "to": "Apr. 2022",
+        "location": "Lausanne, Switzerland (Remote)",
+        "description": {
+          "type": "list",
+          "heading": "VITA Lab - Under the supervision of Prof. <a href=\"https://scholar.google.com/citations?user=UIhXQ64AAAAJ&hl=en\" target=\"_blank\" rel=\"noopener\">Alexandre Alahi</a>",
+          "items": [
+            "Designed and developed a general PyTorch-based framework to merge any vehicle trajectory prediction datasets and adapted them to a model",
+            "Enhanced the generalization of vehicle motion predictions by training them on multiple existing datasets"
+          ]
+        }
+      },
+      {
+        "role": "Undergraduate Research Assistant",
+        "company": "AI-Med, Sharif University of Technology",
+        "from": "Aug. 2020",
+        "to": "Jul. 2022",
+        "location": "Tehran, Iran",
+        "description": {
+          "type": "list",
+          "heading": "Under the supervision of Prof. Hamid R. Rabiee",
+          "items": [
+            {
+              "type": "list",
+              "heading": "Researching Computer-Aided Medical Diagnosis Systems",
+              "items": [
+                "Worked on the interpretability of Computer-Aided Medical Diagnosis Systems",
+                "Published a book chapter at Springer titled <a href=\"https://link.springer.com/chapter/10.1007/978-3-031-10031-4_17\" target=\"_blank\" rel=\"noopener\">\"COVID-19 Diagnosis with Artificial Intelligence\"</a>. Designed, implemented, and executed the experiments related to the proposed guideline to develop AI models for diagnosis and screening",
+                "Worked on my Bachelor's thesis titled \"Enhancing Interpretability: A Versatile Clue‑Based Framework for Faithful In‑Depth Interpretations and Knowledge Injection\""
+              ]
+            },
+            "Coordination of Scientific Internship Programs"
+          ]
+        }
+      },
+      {
+        "role": "Software Engineer",
+        "company": "Mohaymen ICT",
+        "from": "Jun. 2019",
+        "to": "Aug. 2020",
+        "location": "Tehran, Iran",
+        "description": {
+          "type": "list",
+          "items": [
+            "Designed a custom RPC framework for inter-microservice APIs and implement them in C# and JavaScript",
+            "Designed and implemented a general graph pattern matching microservice that works with multiple databases such as SQL Server, Oracle SQL, Elasticsearch, ...",
+            "Mentorship of Software Engineering Internship"
+          ]
+        }
+      }
+    ],
+    "email": "ahmadsa [at] yorku [dot] ca",
+    "cv_url": "files/cv.pdf",
     "social": [
+      {
+        "name": "x",
+        "url": "https://x.com/ahmadsalimi_",
+        "className": "fa-brands fa-x-twitter"
+      },
+      {
+        "name": "scholar",
+        "url": "https://scholar.google.com/citations?user=vmGW41sAAAAJ",
+        "className": "ai ai-google-scholar"
+      },
       {
         "name": "github",
         "url": "http://github.com/ahmadsalimi",
-        "className": "fa fa-github"
-      },
-      {
-        "name": "twitter",
-        "url": "http://twitter.com/ChichekaMan",
-        "className": "fa fa-twitter"
+        "className": "fab fa-github"
       },
       {
         "name": "linkedin",
         "url": "https://www.linkedin.com/in/ahmadsalimi/",
-        "className": "fa fa-linkedin"
-      },
-      {
-        "name": "instagram",
-        "url": "http://instagram.com/ahmadsalimi__",
-        "className": "fa fa-instagram"
-      }
-    ]
-  },
-  "resume": {
-    "skillmessage": "Here you can create a short write-up of your skills to show off to employers",
-    "education": [
-      {
-        "school": "Sharif University of Technology",
-        "degree": "Bachelor of Science, Computer Engineering",
-        "years": "2018 - 2023",
-        "description": "Tehran, Iran"
-      },
-      {
-        "school": "National Organization for Development of Exceptional Talents (Sampad)",
-        "degree": "High School Diploma, Physics and Matehmatics",
-        "years": "2011 - 2018",
-        "description": "Bandar Abbas, Iran"
+        "className": "fab fa-linkedin"
       }
     ],
-    "work": [
+    "news": [
       {
-        "company": "EPFL (École polytechnique fédérale de Lausanne)",
-        "title": "Undergraduate Research Assistant",
-        "years": "June 2021 - Present",
-        "description": "Visual Intelligence for Transportation - VITA lab"
-      }
-    ],
-    "skills": [
-      {
-        "name": "Git",
-        "level": "60%"
+        "title": "I started a research internship at Ubisoft La Forge Toronto.",
+        "date": "February 24, 2025"
       },
       {
-        "name": "Illustrator",
-        "level": "55%"
+        "title": "I joined <a href=\"https://yorkucvil.github.io/\" target=\"_blank\" rel=\"noopener\">Computational Vision and Imaging Lab</a> as a Research Assistant.",
+        "date": "September 1, 2023"
       },
       {
-        "name": "ReactJs",
-        "level": "50%"
+        "title": "I accepted the <a href=\"https://vista.info.yorku.ca/opportunities/masters-scholarships/\" target=\"_blank\" rel=\"noopener\">VISTA Graduate Scholarship</a> at York University.",
+        "date": "June 28, 2023"
       },
       {
-        "name": "CSS",
-        "level": "90%"
+        "title": "I accepted the <a href=\"https://vectorinstitute.ai/programs/scholarship/\" target=\"_blank\" rel=\"noopener\">Vector Scholarship in Artificial Intelligence</a> from Vector Institute.",
+        "date": "April 20, 2023"
       },
       {
-        "name": "HTML5",
-        "level": "80%"
-      },
-      {
-        "name": "VueJs",
-        "level": "50%"
-      },
-      {
-        "name": "MongoDB",
-        "level": "80%"
-      }
-    ]
-  },
-  "portfolio": {
-    "projects": [
-      {
-        "title": "Canadian Wanderlust",
-        "category": "My Travel Blog for my post-university travels",
-        "image": "canadian-wanderlust.jpg",
-        "url": "https://www.canadianwanderlust.com"
-      },
-      {
-        "title": "Fury Fighting Gear",
-        "category": "(offline now) A fighting gear company I started",
-        "image": "fury-fighting-gear.jpg",
-        "url": "http://www.timbakerdev.com"
-      },
-      {
-        "title": "Original Thai Food",
-        "category": "Website I built for a restaurant I like in Thailand",
-        "image": "original-thai-food.jpg",
-        "url": "http://www.timbakerdev.com/originalthaifood.github.io"
-      },
-      {
-        "title": "Resume Website",
-        "category": "A React based resume website template",
-        "image": "resume-website.jpg",
-        "url": "http://www.timbakerdev.com"
-      },
-      {
-        "title": "Smirkspace",
-        "category": "(MVP Only) A React and Meteor based chat University project.",
-        "image": "smirkspace.jpg",
-        "url": "http://www.smirkspace.com"
-      }
-    ]
-  },
-  "testimonials": {
-    "testimonials": [
-      {
-        "text": "Here you should write some nice things that someone has said about you. No lies though, employers can tell when you are lying.",
-        "user": "Kareem Abdul Jabbar"
-      },
-      {
-        "text": "That Tim Baker must be one of the most brilliant developers I've ever met! It is amazing that nobody has hired him yet. Hey you, you should hire this guy, he may be fresh out of University and have zero on the job experience but I am confident that he will be one of your best developers in no time!",
-        "user": "Steve Wozniak... impersonator"
+        "title": "I got accepted to York University Masters of Science program in Computer Science.",
+        "date": "February 24, 2023"
       }
     ]
   }
