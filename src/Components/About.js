@@ -33,7 +33,7 @@ class About extends Component {
                            <h3>{location}</h3>
                            <h3><i className="fas fa-envelope"></i> {email}</h3>
                         </div>
-                        <ul className="network-icon" aria-hidden="true">
+                        <ul className="network-icon">
                            <li key="contact">
                               <a href="/#contact" >
                                  <i className="fas fa-envelope big-icon"></i>
