@@ -45,9 +45,47 @@ class Publication extends Component {
               {publication.publisher}
             </span>
           </div>
-          <a href={publication.publication_webpage} target="_blank" rel='noopener'>
-            <img src={publication.image_url} className="article-banner" alt={publication.title} />
-          </a>
+          {publication.image_url && publication.video_url ? (
+            <a href={publication.publication_webpage} target="_blank" rel='noopener'>
+              <div style={{ display: 'flex', gap: '10px', alignItems: 'flex-end' }}>
+                <img 
+                  src={publication.image_url} 
+                  className="article-banner" 
+                  alt={publication.title} 
+                  style={{ flex: '1', maxWidth: '50%' }}
+                />
+                <video 
+                  className="article-banner" 
+                  autoPlay 
+                  muted 
+                  loop 
+                  playsInline 
+                  style={{ flex: '1', maxWidth: '50%', height: 'auto' }}
+                >
+                  <source src={publication.video_url} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </a>
+          ) : publication.video_url ? (
+            <a href={publication.publication_webpage} target="_blank" rel='noopener'>
+              <video 
+                className="article-banner" 
+                autoPlay 
+                muted 
+                loop 
+                playsInline 
+                style={{ width: '100%', height: 'auto' }}
+              >
+                <source src={publication.video_url} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </a>
+          ) : publication.image_url ? (
+            <a href={publication.publication_webpage} target="_blank" rel="noopener">
+              <img src={publication.image_url} className="article-banner" alt={publication.title} />
+            </a>
+          ) : null}
           <h3 className="article-title mb-1 mt-3">
             <a href={publication.publication_webpage} target="_blank" rel='noopener'>{publication.title}</a>
           </h3>
