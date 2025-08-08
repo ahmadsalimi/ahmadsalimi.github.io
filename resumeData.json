@@ -6,7 +6,7 @@
     "location": "Toronto, Canada",
     "description": "Undergraduate Research Assistant at EPFL",
     "image_url": "https://github.com/ahmadsalimi.png",
-    "about": "Hi there! I'm Ahmad, an M.Sc. student in Computer Science at York University, working under the supervision of <a href=\"https://csprofkgd.github.io/\" target=\"_blank\" rel=\"noopener\">Kosta Derpanis</a> as a member of the <a href=\"https://yorkucvil.github.io/\" target=\"_blank\" rel=\"noopener\">CVIL Lab</a>. My research focuses on artificial intelligence, particularly computer vision. I'm especially interested in generative modeling, with a focus on Diffusion Models and their controllability in 3D Vision.",
+    "about": "Hi there! I'm Ahmad, an M.Sc. student in Computer Science at York University, working under the supervision of <a href=\"https://csprofkgd.github.io/\" target=\"_blank\" rel=\"noopener\">Kosta Derpanis</a> as a member of the <a href=\"https://yorkucvil.github.io/\" target=\"_blank\" rel=\"noopener\">CVIL Lab</a>. I'm currently a Research and Development Intern at <a href=\"https://www.ubisoft.com/en-us/studio/laforge\" target=\"_blank\" rel=\"noopener\">Ubisoft La Forge</a>, working on generative models for speech-driven face animation. My research focuses on artificial intelligence, particularly computer vision. I'm especially interested in generative modeling, with a focus on Diffusion Models and their controllability in 3D Vision.",
     "interests": [
       "Computer Vision",
       "Generative Modeling",
@@ -51,8 +51,8 @@
             "url": "https://csprofkgd.github.io/"
           }
         ],
-        "date": "February 2025",
-        "publisher": "arXiv preprint",
+        "date": "2025",
+        "publisher": "British Machine Vision Conference, BMVC 2025",
         "image_url": "https://geomvi.github.io/assets/teaser.svg",
         "abstract": "In this paper, we focus on 3D scene inpainting, where parts of an input image set, captured from different viewpoints, are masked out. The main challenge lies in generating plausible image completions that are geometrically consistent across views. Most recent work addresses this challenge by combining generative models with a 3D radiance field to fuse information across viewpoints. However, a major drawback of these methods is that they often produce blurry images due to the fusion of inconsistent cross-view images. To avoid blurry inpaintings, we eschew the use of an explicit or implicit radiance field altogether and instead fuse cross-view information in a learned space. In particular, we introduce a geometry-aware conditional generative model, capable of inpainting multi-view consistent images based on both geometric and appearance cues from reference images. A key advantage of our approach over existing methods is its unique ability to inpaint masked scenes with a limited number of views (i.e., few-view inpainting), whereas previous methods require relatively large image sets for their 3D model fitting step. Empirically, we evaluate and compare our scene-centric inpainting method on two datasets, SPIn-NeRF and NeRFiller, which contain images captured at narrow and wide baselines, respectively, and achieve state-of-the-art 3D inpainting performance on both. Additionally, we demonstrate the efficacy of our approach in the few-view setting compared to prior methods.",
         "publication_webpage": "https://geomvi.github.io/",
@@ -63,7 +63,22 @@
     ],
     "experience": [
       {
-        "role": "Research and Teaching Assistant",
+        "role": "Research and Development Intern - Deep Learning",
+        "company": "Ubisoft La Forge",
+        "from": "February 2025",
+        "location": "Toronto, Canada",
+        "description": {
+          "type": "list",
+          "heading": "Research on generative models for speech-driven face animation generation using mesh-based facial data",
+          "items": [
+            "Focused on controllability of diffusion models to stylize generated animations using style example clips, aiming to enable the generated animation to mimic the underlying style (in progress)",
+            "Utilizing k-sparse autoencoders for the stylization task, enabling the ability to discover, extract, and transfer style features",
+            "Developing and training speech2face diffusion and flow models using score matching and flow matching for enhanced high-quality animation generation (in progress)"
+          ]
+        }
+      },
+      {
+        "role": "Research Assistant - Computer Vision and Deep Learning",
         "company": "Lassonde School of Engineering, York University",
         "from": "September 2023",
         "location": "Toronto, Canada",
@@ -72,10 +87,11 @@
           "items": [
             {
               "type": "list",
-              "heading": "Research at CVIL Lab - Under the supervision of <a href=\"https://csprofkgd.github.io/\" target=\"_blank\" rel=\"noopener\">Kosta Derpanis</a>: Generative Modeling, especially Diffusion Models and their controllability in the context of 3D Vision",
+              "heading": "Research at CVIL Lab - Under the supervision of Prof. <a href=\"https://scholar.google.ca/citations?user=3Br8x_gAAAAJ&hl=en\" target=\"_blank\" rel=\"noopener\">Konstantinos G. Derpanis</a>: Generative Modeling, especially Diffusion Models and their controllability in the context of 3D Vision",
               "items": [
-                "Master's thesis title: Geometry-Aware Diffusion Models for Multiview Scene Inpainting (In progress)",
-                "Designed, implemented, and trained a geometry-aware diffusion model to inpaint 3D scenes, by fine-tuning Stable Diffusion for inpainting, achieving state-of-the-art performance compared to previous work. Worked with PyTorch, PyTorch Lightning, Diffusers, PyTorch3D, Kornia, NeRF Studio, Weights & Biases, etc."
+                "Master's thesis title: Geometry-Aware Diffusion Models for Multiview Scene Inpainting (to be defended soon)",
+                "A paper based on this work has been accepted at BMVC 2025",
+                "Designed, implemented, and trained a geometry-aware diffusion model to inpaint 3D scenes, by fine-tuning Stable Diffusion for inpainting, achieving state-of-the-art performance with an increase of 17% in FID and 10% in 3D consistency compared to previous NeRF- and Gaussian Splatting-based methods. Utilized mesh rendering as a key step in the inpainting algorithm. Optimized model performance through hyperparameter tuning and distributed training. Worked with PyTorch, PyTorch Lightning, Diffusers, PyTorch3D, Kornia, NeRF Studio, Weights & Biases, etc."
               ]
             },
             {
@@ -90,7 +106,7 @@
         }
       },
       {
-        "role": "Data Scientist",
+        "role": "Machine Learning Engineer",
         "company": "Hasti Innovative Trading",
         "from": "Oct. 2022",
         "to": "May. 2023",
@@ -102,14 +118,14 @@
               "type": "list",
               "heading": "Fully Automated Pipeline for Training Deep Learning Models",
               "items": [
-                "Designed a solution to create datasets, train models on GPU, and, deploy results in production using Docker, PyTorch, PyTorch Lightning, and DVC, decreasing development, training, and deployment time by 90%"
+                "Designed and implemented scalable data pipelines to create datasets, train models on GPU clusters, and deploy results in production using Docker, PyTorch, PyTorch Lightning, and DVC, decreasing development, training, and deployment time by 90%"
               ]
             },
             {
               "type": "list",
               "heading": "Train and Deploy Deep Models",
               "items": [
-                "Designed and implemented a service-oriented multi-modal search engine for a large collection of online marketplaces, compatible with multi-modal documents and queries",
+                "Designed and implemented a service-oriented multi-modal search engine for a large collection of e-commerce online marketplaces, compatible with multi-modal documents and queries",
                 "Fine-tuned OpenAI CLIP for domain adaptation with 9 million training samples",
                 "Trained a zero-shot vision-language Transformer-based model to build a session-based recommendation system",
                 "Developed several microservices with the internal and external APIs using gRPC and gRPC gateway in GoLang and Python",
@@ -121,8 +137,8 @@
         }
       },
       {
-        "role": "Undergraduate Research Assistant",
-        "company": "EPFL",
+        "role": "Research Assistant - Deep Learning",
+        "company": "VITA Lab, EPFL",
         "from": "Jun. 2021",
         "to": "Apr. 2022",
         "location": "Lausanne, Switzerland (Remote)",
@@ -131,12 +147,13 @@
           "heading": "VITA Lab - Under the supervision of Prof. <a href=\"https://scholar.google.com/citations?user=UIhXQ64AAAAJ&hl=en\" target=\"_blank\" rel=\"noopener\">Alexandre Alahi</a>",
           "items": [
             "Designed and developed a general PyTorch-based framework to merge any vehicle trajectory prediction datasets and adapted them to a model",
+            "Merged and standardized three vehicle trajectory datasets",
             "Enhanced the generalization of vehicle motion predictions by training them on multiple existing datasets"
           ]
         }
       },
       {
-        "role": "Undergraduate Research Assistant",
+        "role": "Research Assistant - Computer Vision and Deep Learning",
         "company": "AI-Med, Sharif University of Technology",
         "from": "Aug. 2020",
         "to": "Jul. 2022",
@@ -167,9 +184,8 @@
         "description": {
           "type": "list",
           "items": [
-            "Designed a custom RPC framework for inter-microservice APIs and implement them in C# and JavaScript",
-            "Designed and implemented a general graph pattern matching microservice that works with multiple databases such as SQL Server, Oracle SQL, Elasticsearch, ...",
-            "Mentorship of Software Engineering Internship"
+            "Designed a custom RPC framework for inter-microservice APIs and implemented them in C#, JavaScript, and TypeScript",
+            "Designed and implemented a general graph pattern matching microservice that works with multiple databases such as SQL Server, Oracle SQL, Elasticsearch, ..."
           ]
         }
       }
@@ -199,6 +215,10 @@
       }
     ],
     "news": [
+      {
+        "title": "Our paper \"<a href=\"#publication-geometry-aware-diffusion-models-for-multiview-scene-inpainting\">Geometry-Aware Diffusion Models for Multiview Scene Inpainting</a>\" got accepted at <a href=\"https://bmvc2025.bmva.org/\" target=\"_blank\" rel=\"noopener\">BMVC 2025</a>!",
+        "date": "July 25, 2025"
+      },
       {
         "title": "I started a research internship at Ubisoft La Forge Toronto.",
         "date": "February 24, 2025"
