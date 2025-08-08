@@ -1,6 +1,45 @@
 import React, { Component } from 'react';
 
 class News extends Component {
+  
+  componentDidMount() {
+    // Add smooth scroll behavior for publication links
+    this.addSmoothScrollToPublicationLinks();
+  }
+
+  componentDidUpdate() {
+    // Re-add smooth scroll behavior when component updates
+    this.addSmoothScrollToPublicationLinks();
+  }
+
+  addSmoothScrollToPublicationLinks = () => {
+    const publicationLinks = document.querySelectorAll('a[href^="#publication-"]');
+    publicationLinks.forEach(link => {
+      link.addEventListener('click', this.handlePublicationLinkClick);
+    });
+  }
+
+  handlePublicationLinkClick = (e) => {
+    e.preventDefault();
+    const targetId = e.target.getAttribute('href').substring(1);
+    const targetElement = document.getElementById(targetId);
+    
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  }
+
+  componentWillUnmount() {
+    // Clean up event listeners
+    const publicationLinks = document.querySelectorAll('a[href^="#publication-"]');
+    publicationLinks.forEach(link => {
+      link.removeEventListener('click', this.handlePublicationLinkClick);
+    });
+  }
+
   render() {
     if (this.props.data) {
       var news = this.props.data.news;

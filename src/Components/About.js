@@ -34,11 +34,6 @@ class About extends Component {
                            <h3><i className="fas fa-envelope"></i> {email}</h3>
                         </div>
                         <ul className="network-icon">
-                           <li key="contact">
-                              <a href="/#contact" >
-                                 <i className="fas fa-envelope big-icon"></i>
-                              </a>
-                           </li>
                            {social && social.map((item) => {
                               return (
                                  <li key={item.name}>

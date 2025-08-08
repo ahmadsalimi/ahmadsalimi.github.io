@@ -20,5 +20,5 @@
     "prestart": "npm run buildIndex",
     "prebuild": "npm run buildIndex"
   },
-  "homepage": "https://salimiahmad.ir/"
+  "homepage": "https://ahmadsalimi.github.io/"
 }
