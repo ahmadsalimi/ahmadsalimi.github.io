@@ -44,7 +44,10 @@ class About extends Component {
                               )
                            })}
                            <li key="cv">
-                              <a href={cv_url} target="_blank" rel="noopener">
+                              <a href={cv_url}
+                                 target="_blank"
+                                 rel="noopener"
+                                 download="AhmadSalimi_CV.pdf">
                                  <i className="ai ai-cv big-icon"></i>
                               </a>
                            </li>
