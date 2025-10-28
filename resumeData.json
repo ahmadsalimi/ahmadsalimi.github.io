@@ -1,12 +1,11 @@
 {
   "main": {
     "name": "Ahmad Salimi",
-    "title": "Graduate Researcher",
-    "affiliation": "York University",
+    "title": "Machine Learning Engineer",
+    "affiliation": "Boson AI",
     "location": "Toronto, Canada",
-    "description": "Undergraduate Research Assistant at EPFL",
     "image_url": "https://github.com/ahmadsalimi.png",
-    "about": "Hi there! I'm Ahmad, an M.Sc. student in Computer Science at York University, working under the supervision of <a href=\"https://csprofkgd.github.io/\" target=\"_blank\" rel=\"noopener\">Kosta Derpanis</a> as a member of the <a href=\"https://yorkucvil.github.io/\" target=\"_blank\" rel=\"noopener\">CVIL Lab</a>. I'm currently a Research and Development Intern at <a href=\"https://www.ubisoft.com/en-us/studio/laforge\" target=\"_blank\" rel=\"noopener\">Ubisoft La Forge</a>, working on generative models for speech-driven face animation. My research focuses on artificial intelligence, particularly computer vision. I'm especially interested in generative modeling, with a focus on Diffusion Models and their controllability in 3D Vision.",
+    "about": "Hi there! I'm Ahmad, a Machine Learning Engineer at <a href=\"https://boson.ai/\" target=\"_blank\" rel=\"noopener\">Boson AI</a>, working on generative modeling and foundational models for audio and video. I recently completed my M.Sc. in Computer Science at York University, where I worked under the supervision of <a href=\"https://csprofkgd.github.io/\" target=\"_blank\" rel=\"noopener\">Kosta Derpanis</a> as a member of the <a href=\"https://yorkucvil.github.io/\" target=\"_blank\" rel=\"noopener\">CVIL Lab</a>, focusing on Diffusion Models and their controllability in 3D Vision. I also completed a research internship at <a href=\"https://www.ubisoft.com/en-us/studio/laforge\" target=\"_blank\" rel=\"noopener\">Ubisoft La Forge</a>, working on generative models for speech-driven face animation. My research focuses on artificial intelligence, particularly computer vision and generative modeling.",
     "interests": [
       "Computer Vision",
       "Generative Modeling",
@@ -64,17 +63,26 @@
     ],
     "experience": [
       {
+        "role": "Machine Learning Engineer",
+        "company": "Boson AI",
+        "from": "October 2025",
+        "location": "Toronto, Canada",
+        "description": "Modeling Team - Generative modeling and foundational models for audio and video"
+      },
+      {
         "role": "Research and Development Intern - Deep Learning",
         "company": "Ubisoft La Forge",
         "from": "February 2025",
+        "to": "October 2025",
         "location": "Toronto, Canada",
         "description": {
           "type": "list",
           "heading": "Research on generative models for speech-driven face animation generation using mesh-based facial data",
           "items": [
-            "Focused on controllability of diffusion models to stylize generated animations using style example clips, aiming to enable the generated animation to mimic the underlying style (in progress)",
-            "Utilizing k-sparse autoencoders for the stylization task, enabling the ability to discover, extract, and transfer style features",
-            "Developing and training speech2face diffusion and flow models using score matching and flow matching for enhanced high-quality animation generation (in progress)"
+            "Focused on controllability of diffusion models to stylize generated animations using style example clips and textual descriptions, aiming to enable the generated animation to mimic the underlying style (in progress)",
+            "Leveraging Vertex AI Platform for automated data annotation",
+            "Designed a set of evaluation metrics to assess the quality of generated animations (e.g., lip-sync accuracy and distribution similarity)",
+            "Developing and training speech2face models using score matching and flow matching for enhanced high-quality animation generation"
           ]
         }
       },
@@ -82,6 +90,7 @@
         "role": "Research Assistant - Computer Vision and Deep Learning",
         "company": "Lassonde School of Engineering, York University",
         "from": "September 2023",
+        "to": "October 2025",
         "location": "Toronto, Canada",
         "description": {
           "type": "list",
@@ -90,7 +99,8 @@
               "type": "list",
               "heading": "Research at CVIL Lab - Under the supervision of Prof. <a href=\"https://scholar.google.ca/citations?user=3Br8x_gAAAAJ&hl=en\" target=\"_blank\" rel=\"noopener\">Konstantinos G. Derpanis</a>: Generative Modeling, especially Diffusion Models and their controllability in the context of 3D Vision",
               "items": [
-                "Master's thesis title: Geometry-Aware Diffusion Models for Multiview Scene Inpainting (to be defended soon)",
+                "Master's thesis title: Geometry-Aware Diffusion Models for Multiview Scene Inpainting",
+                "Successfully defended thesis in October 2025",
                 "A paper based on this work has been accepted at BMVC 2025",
                 "Designed, implemented, and trained a geometry-aware diffusion model to inpaint 3D scenes, by fine-tuning Stable Diffusion for inpainting, achieving state-of-the-art performance with an increase of 17% in FID and 10% in 3D consistency compared to previous NeRF- and Gaussian Splatting-based methods. Utilized mesh rendering as a key step in the inpainting algorithm. Optimized model performance through hyperparameter tuning and distributed training. Worked with PyTorch, PyTorch Lightning, Diffusers, PyTorch3D, Kornia, NeRF Studio, Weights & Biases, etc."
               ]
@@ -191,7 +201,7 @@
         }
       }
     ],
-    "email": "ahmadsa [at] yorku [dot] ca",
+    "email": "ahsa9978 [at] gmail [dot] com",
     "cv_url": "/files/cv.pdf",
     "social": [
       {
@@ -216,6 +226,14 @@
       }
     ],
     "news": [
+      {
+        "title": "I joined <a href=\"https://boson.ai/\" target=\"_blank\" rel=\"noopener\">Boson AI</a> as a Machine Learning Engineer!",
+        "date": "October 22, 2025"
+      },
+      {
+        "title": "I successfully defended my M.Sc. thesis titled \"Geometry-Aware Diffusion Models for Multiview Scene Inpainting\"!",
+        "date": "October 20, 2025"
+      },
       {
         "title": "Our paper \"<a href=\"#publication-geometry-aware-diffusion-models-for-multiview-scene-inpainting\">Geometry-Aware Diffusion Models for Multiview Scene Inpainting</a>\" got accepted at <a href=\"https://bmvc2025.bmva.org/\" target=\"_blank\" rel=\"noopener\">BMVC 2025</a>!",
         "date": "July 25, 2025"
